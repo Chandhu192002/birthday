@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>A Special Gift for Shivani Adhikari</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <canvas id="fx-canvas" aria-hidden="true"></canvas>
+  <main class="stage">
+    <section id="gift-scene" class="scene active gift-scene">
+      <div class="ambient fairy"></div>
+      <div class="copy-stack gift-copy">
+        <p>A Special Gift</p>
+        <span>For</span>
+        <h1>Shivani Adhikari</h1>
+        <small>Touch and pull the ribbon ♡</small>
+      </div>
+      <div class="gift-area" aria-label="Pull the ribbon to open the gift">
+        <div id="ribbon" class="ribbon" role="button" tabindex="0"><span></span></div>
+        <div class="pull-note">PULL DOWN<br><b>👇</b></div>
+        <div id="giftBox" class="gift-box">
+          <img src="assets/gift.png" alt="">
+          <div class="gift-light"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cat-scene" class="scene cat-room">
+      <div class="room-lights"></div>
+      <div id="cat" class="cat walk face-right" aria-label="A fluffy white kitten">
+        <span class="bow"></span>
+        <span class="ear left"></span><span class="ear right"></span>
+        <span class="head"><i class="eye left"></i><i class="eye right"></i><i class="nose"></i><i class="mouth"></i></span>
+        <span class="body"></span><span class="tail"></span>
+        <span class="leg a"></span><span class="leg b"></span><span class="leg c"></span><span class="leg d"></span>
+      </div>
+    </section>
+
+    <section id="wish-scene" class="scene wish-scene">
+      <div class="room-lights"></div>
+      <div class="cat sit small face-right" aria-hidden="true">
+        <span class="bow"></span>
+        <span class="ear left"></span><span class="ear right"></span>
+        <span class="head"><i class="eye left"></i><i class="eye right"></i><i class="nose"></i><i class="mouth talking"></i></span>
+        <span class="body"></span><span class="tail"></span>
+      </div>
+      <div id="speechBubble" class="speech-bubble">Hi little princess!</div>
+    </section>
+
+    <section id="cake-scene" class="scene cake-scene">
+      <div class="room-lights"></div>
+      <div class="cat sit corner face-right" aria-hidden="true">
+        <span class="bow"></span>
+        <span class="ear left"></span><span class="ear right"></span>
+        <span class="head"><i class="eye left"></i><i class="eye right"></i><i class="nose"></i><i class="mouth talking"></i></span>
+        <span class="body"></span><span class="tail"></span>
+      </div>
+      <div class="cake-wrap">
+        <img id="cake" src="assets/cake.png" alt="Pink birthday cake with candles">
+        <div class="flames"><i></i><i></i><i></i></div>
+      </div>
+      <div id="cakeBubble" class="speech-bubble cake-bubble">Make a wish, Little Princess!</div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
